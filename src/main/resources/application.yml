@@ -1,0 +1,26 @@
+### 数据库暂时用不着
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/openai # 或spring.datasource.url=
+      username: root # 或spring.datasource.username=
+      password: root # 或spring.datasource.password=
+      initial-size: 5
+      max-active: 20
+      min-idle: 1
+      max-wait: 6000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size=: 20
+      max-open-prepared-statements: 20 #和上面的等:
+      validation-query: SELECT 1
+      validation-query-timeout: 1000
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      max-evictable-idle-time-millis: 900000
+      filters: stat #配置多个英文逗号分
+###
+server:
+  port: 8080
