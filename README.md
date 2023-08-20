@@ -1,6 +1,9 @@
 一个简单的调用OpenAI的API接口例子，可以部署到自己的服务器，提供给自己的用户使用
 
-其中申请的OPENAI APIKEY放到环境变量中，名字叫`OPENAI_TOKEN`
+#### 配置：
+
+* 申请的OPENAI APIKEY放到环境变量中，名字叫`OPENAI_TOKEN`
+* 增加了鉴权，简单起见，需要在请求头中加入参数`AuthorizationStr:24342751f59b90938a65df68eae508f1`
 
 目前只提供了一个接口：
 
